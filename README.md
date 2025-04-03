@@ -1,6 +1,15 @@
 # DecolaTech-DIO-SpringTaskBoard
 
 # TaskBoard - Gerenciamento de Tarefas
+
+![image](https://github.com/user-attachments/assets/be770640-ba44-46bf-abc1-66fff3516173)
+![image](https://github.com/user-attachments/assets/4838c981-1684-4411-8f9e-69eb19e5eaf0)
+![image](https://github.com/user-attachments/assets/72b9bb98-996c-457a-aade-2eab773855c9)
+![image](https://github.com/user-attachments/assets/bcb8cb12-3173-427b-b8ea-3a747cfa9b21)
+
+
+
+
 ## Descrição do Projeto
 O TaskBoard é um sistema de gerenciamento de tarefas desenvolvido em Java com Spring Boot e MySQL, criado como parte de um projeto educacional da DIO. O objetivo é permitir que os usuários criem e gerenciem quadros (boards) de tarefas, organizando-as em colunas e cards, de forma semelhante a ferramentas como Jira. O sistema é interativo, rodando no console, e permite criar boards, colunas, cards, mover cards entre colunas, bloquear/desbloquear cards e listar tudo, com os dados persistidos em um banco de dados MySQL.
 ## Funcionalidades
@@ -42,13 +51,19 @@ CREATE DATABASE taskboard;
 Configure as credenciais do MySQL no arquivo src/main/resources/application.properties:
 properties
 
-spring.datasource.url=jdbc:mysql://localhost:3306/taskboard
-spring.datasource.username=root
-spring.datasource.password="sua-senha"
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+<sub>spring.datasource.url=jdbc:mysql://localhost:3306/taskboard 
 
-**Atenção na linha onde contém "sua-senha" é senha do MySQL da sua instalação.
+<sub>spring.datasource.username=root 
+
+<sub>spring.datasource.password="sua-senha" 
+
+<sub>spring.jpa.hibernate.ddl-auto=update 
+
+<sub>spring.jpa.show-sql=true </sub>
+
+
+
+<sub>**Atenção na linha onde contém "sua-senha" é senha do MySQL da sua instalação.
 
 ### Compile e Execute o Projeto:
 No IDE, execute:
@@ -57,6 +72,8 @@ O programa iniciará e exibirá um menu interativo no console.
 
 ## Como Usar
 ### Menu Principal:
+![image](https://github.com/user-attachments/assets/749a81a9-4f17-4713-8e04-333f64a71d29)
+
 1 - Criar novo board: Crie um board com nome e responsável.
 
 2 - Selecionar board: Liste os boards e selecione um para gerenciar.
@@ -66,6 +83,9 @@ O programa iniciará e exibirá um menu interativo no console.
 4 - Sair: Encerre o programa.
 
 ### Submenu do Board (após selecionar um board(Opção 2)):
+
+![image](https://github.com/user-attachments/assets/98bd2c43-8817-434d-9e63-c33c418a3645)
+
 1 - Criar coluna: Crie uma nova coluna (ex.: "Inicial").
 
 2 - Criar card: Crie um card em uma coluna, com título e descrição.
@@ -74,7 +94,12 @@ O programa iniciará e exibirá um menu interativo no console.
 
 4 - Bloquear/Desbloquear card: Bloqueie ou desbloqueie um card, informando um motivo.
 
+![image](https://github.com/user-attachments/assets/01131745-02f5-49bd-b9c2-d8333c81071b)
+
 5 - Listar colunas e cards: Veja todas as colunas e cards do board.
+
+![image](https://github.com/user-attachments/assets/5ccbbc44-aae9-4827-b887-b35b95f3504b)
+
 
 6 - Voltar ao menu principal: Retorne ao menu principal.
 
